@@ -98,8 +98,6 @@ margin-top: 100px;
 
 
 
-
-
   /*      HEADER       */
   .header { 
     grid-area: header; 
@@ -210,17 +208,20 @@ h3{
   @media (max-width:768px) {
     .container {  
       display: grid;
-      grid-template-columns: .3fr 1fr;
-      grid-template-rows: 0.4fr 2fr 2fr 0.6fr;
+      grid-template-columns:  0.5fr 1fr;
+      grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
       grid-template-areas:
-        "logo-ups header"
+        "logo-ups header "
         "logo-ups Control"
         "logo-ups disciplina"
-        "footer footer ";
+        "footer footer";
     }
   
-
-
+    .container{
+      width: 100%;
+      height: 60vh;
+    }
+    
     h2{
       padding: 1.5px;
       margin-top: 30px;
@@ -231,8 +232,8 @@ h3{
     .logo-ups img{
       width: 200px;
    padding: 2.5px;
-   margin-top: 50px;
-margin-left: 10px;
+   margin-top: 250px;
+margin-left: 25px;
     }
 
     .logo-ups h3{
@@ -241,42 +242,39 @@ margin-left: 10px;
 
     }
     video{
-      height: 60vh;
+      
+      height: 50vh;
   margin-top: 30px;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
     }
 
-.control{
-  width: 100%;
-}
-.disciplina{
-  width: 100%;
-}
+    .control{
+      width: 100%;
+    }
+   
+    .contenido-footer a{
+      font-size: 1rem;
+    }
 
-  }
+    }
 
-  @media (max-width:420px){
-    .container {  
-      display: grid;
-      grid-template-columns: 2fr;
-      grid-template-rows: 0.5fr 2fr  2fr 2fr 0.6fr;
-      grid-template-areas:
-        "header"
-        "logo-ups" 
-        "Control"
-        "disciplina"
-        "footer ";
-  }
-  .logo-ups{
-    position: relative;
-  }
-  
-.logo-ups img{
-  margin-top: 100px;
-  margin-left: 110px;
-}
+    @media (max-width:420px){
+
+      .container {  
+        display: grid;
+        grid-template-columns: 1.5fr;
+        grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
+        grid-template-areas:
+          "header"
+          "logo-ups"
+          "Control"
+          "disciplina"
+          "footer ";
+      }
+
+      .logo-ups img{
+        margin-left: 110px;
+        margin-top: 50px;
+      }
+    }
 
 
-}
