@@ -1,3 +1,10 @@
+/*  VARIABLES  */
+
+$color: white;
+$rojo: red;
+
+
+
 body{
     background-image: url(../nuevas/1366_2000.jpeg);
     background-position: center;
@@ -7,7 +14,7 @@ body{
 
 
 .navbar {
-    background-color: white;
+    background-color: $color;
 }
 .col{
     padding-top: 20px;
@@ -27,7 +34,7 @@ body{
 /* footer */
 
 .contenido-footer{
-    color: white;
+    color: $color;
     padding: 60px 0px 30px 0px;
     margin: auto;
     overflow: hidden;
@@ -36,7 +43,7 @@ body{
     justify-content: space-between; padding: 5px;
     margin: 0 5px;
     padding-bottom: 50px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $rojo;
 
 }
 
@@ -46,7 +53,7 @@ body{
     font-size: 20px;}
 
     a{
-    color: white;
+    color: $color;
     font-size: 1.5rem;
     text-decoration: underline;
 }
