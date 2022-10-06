@@ -5,7 +5,6 @@
 
 body{
     background-color: black;
-    border: solid 1px;
     border-color: white;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -21,7 +20,7 @@ body{
  margin: 0px 0px 5px 0px;
  position: static;
 }
-
+/* FORMULARIO */
 .formulario{
     width: 400px;
     background-color: rgb(255, 255, 255);
@@ -91,18 +90,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 .contenido-footer{
     color: white;
@@ -129,5 +116,36 @@ body{
     color: white;
     font-size: 1.5rem;
     text-decoration: underline;
+}
+
+@media (max-width:768px){
+
+.contenido-imagen img{ 
+    width: 500px;
+    border-radius: 2px;
+}
+.formulario{
+    width: 300px; 
+ }
+
+
+footer{
+    width: auto;
+}
+}
+@media (max-width:420px){
+    .contenido-imagen { 
+       width: 200px;
+       margin-left: 110px;
+
+    }
+    .formulario{
+        width: 300px;
+    }
+
+    .formulario p{
+        font-size: 20px;
+    }
+
 }
 
