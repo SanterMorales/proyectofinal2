@@ -1,49 +1,47 @@
 /*  VARIABLES  */
 body {
-  background-image: url(../nuevas/1366_2000.jpeg);
+  background-image: url(../nuevas/fondoprueba6.jpg);
   background-position: center;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .navbar {
-  background-color: white;
-}
+  background-color: white; }
+  .navbar a{
+    font-family: 'Cinzel', serif;
+  }
 
 .col {
-  padding-top: 20px;
-}
+  padding-top: 20px; }
 
 #carouselExampleIndicators {
-  padding: 25px;
-}
+  padding: 25px; }
 
 #carouselExampleIndicators img {
-  height: 500px;
+  height: 600px;
   width: 80%;
-  margin: auto;
-}
+  margin: auto; }
+  @media (max-width: 420px) {
+    #carouselExampleIndicators img {
+      height: 250px;
+      width: 50%; } }
 
 /* footer */
-.contenido-footer {
-  color: white;
-  padding: 60px 0px 30px 0px;
-  margin: auto;
-  overflow: hidden;
+footer {
+  background-color: white;
   display: flex;
-  width: auto;
   justify-content: space-between;
-  padding: 5px;
-  margin: 0 5px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid red;
-}
-
-.contenido-footer h4 {
-  font-weight: 700;
-  font-size: 20px;
-}
-.contenido-footer a {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: underline;
-}/*# sourceMappingURL=style.css.map */
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100vw;
+  font-size: 1rem;
+  font-weight: bolder; }
+  footer img {
+    width: 50px; }
+  footer a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black; }
+  @media (max-width: 420px) {
+    footer {
+      font-size: .7rem; }
+      footer img {
+        width: 20px; } }

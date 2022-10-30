@@ -2,11 +2,12 @@
 
 $color: white;
 $rojo: red;
+$azul: blue;
 
 
 
 body{
-    background-image: url(../nuevas/1366_2000.jpeg);
+    background-image: url(../nuevas/fondoprueba6.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -15,7 +16,9 @@ body{
 
 .navbar {
     background-color: $color;
-    
+    a{
+        font-family: 'Cinzel', serif;
+    }
 }
 .col{
     padding-top: 20px;
@@ -25,39 +28,44 @@ body{
     padding: 25px;}
 
 #carouselExampleIndicators img{
-    height: 500px;
+    height: 700px;
     width: 80%;
     margin: auto;
+    @media(max-width:420px){
+        height: 250px;
+        width: 50%;
+    }
 }
 
 
 
 /* footer */
 
-.contenido-footer{
-    color: $color;
-    padding: 60px 0px 30px 0px;
-    margin: auto;
-    overflow: hidden;
-    display: flex;  
-    width: auto;
-    justify-content: space-between; padding: 5px;
-    margin: 0 5px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid $rojo;
-
-}
-
-.contenido-footer {
-    h4{
-    font-weight: 700;
-    font-size: 20px;}
-
+footer{
+    background-color: $color;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100vw;
+    font-size: 1rem;
+    font-weight: bolder;
+    
+    img{
+        width: 50px;
+    }
     a{
-    color: $color;
-    font-size: 1.5rem;
-    text-decoration: underline;
-}
+        font-family: 'Josefin Sans', sans-serif;
+        color: black;
+    }
+    @media(max-width:420px){
+        
+            font-size: .7rem;
+          
+          img {
+            width: 20px; }
+    }
+    
 }
 
 

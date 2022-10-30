@@ -6,275 +6,52 @@
 }
 
 body{
-    background-color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
+  background-image: url(/nuevas/fondoaprende.jpg);
 }
 
-.container {  
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr 1fr;
-    grid-template-rows: 0.4fr 2fr 0.6fr;
-    grid-template-areas:
-      "logo-ups header header"
-      "logo-ups Control disciplina"
-      "footer footer footer";
-  }
-
-
-
-  /*      FOOTER       */
-  .footer { 
-    grid-area: footer; 
-    
-}
-.contenido-footer{
-  
-    color: white;
-    padding: 60px 0px 30px 0px;
-    margin: auto;
-    overflow: hidden;
-
+nav{
+  background-color: white;
+  font-family: 'Cinzel', serif;
 }
 
-.contenido-footer{
-    display: flex;  
-    width: auto;
-    justify-content: space-between; padding: 5px;
-    margin: 0 5px;
-    padding-bottom: 50px;
-    border-bottom: 1px solid red;
+main{
+  width:auto ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
-.contenedor-footer .contenido-footer > h4 {
-    font-weight: 700;
-    font-size: 20PX;
-}
-.contenido-footer a{
+.card {
+  background-color: black;
   color: white;
-  font-size: 1.5rem;
-  text-decoration: underline;
-}
-
-
-
-
-
-
-  /*       logo del main    */
-  .logo-ups { 
-    grid-area: logo-ups; 
-  align-items: center;
-  border: solid 1px red;
-  
-}
-
-.logo-ups img{
-  width: 600px;
   padding: 5px;
-margin-top: 100px;
-
-
 }
-.logo-ups h3{
-  font-size: 3rem;
-  margin-top: 20px;
-  display: inline-block;
 
-  animation: move 6s ease-in-out infinite ; 
-}
-@keyframes move { 
-  0%{
-    transform: translate(-100%, 0);
-  }
-
-  50%{
-    text-shadow: 0 25px 20px whitesmoke;
-  }
-
-
-
+.col-md-4 video{
+  height: 100%;
 }
 
 
-
-  /*      HEADER       */
-  .header { 
-    grid-area: header; 
-    font-family: 'Cinzel', serif;
-    background-color: red;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    border: solid 3px white;
-    
-    
-}
-h2{
-  padding: 5px;
-  margin-top: 50px;
-  text-decoration: underline;
-  font-size: 4rem;
-}
-
-  /*    CONTROL */
-
-  .control { 
-    grid-area: Control; 
-    border: solid 1px red;
-    
-}
-
-.control .imagen-control{
-  padding: 15px;
+footer {
+  background-color: white;
   display: flex;
-  justify-content: center; 
-}
-.imagen-control{
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.imagen-control::before{
-  content:"CONTROLA EL PESO O EL TE CONTROLARA A TI..." ;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.219);
-  transform: translate(100%);
-  transition: transform .4s;
+  justify-content: space-between;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-}
-.imagen-control:hover::before{
-  transform: translate(0) rotate(360deg);
-}
-video{
-  height: 90vh;
-  margin-top: 30px;
-}
-h3{
-  text-align: center;
-  padding-top: 5px;
-  margin-top: 15px;
-}
-
-
-  /*   DISCIPLINA    */
-  .disciplina { 
-    grid-area: disciplina; 
-    border: solid 1px red;
-
-}
-  .disciplina .imagen-disciplina{
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-   
-  }
-  .imagen-disciplina{
-    position: relative;
-  cursor: pointer;
-  overflow: hidden;
-  }
-  .imagen-disciplina::before{
-    content:"LA MOTIVACION ES PASAJERA , LA DISCIPLINA ES ETERNA..." ;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.219);
-  transform: translate(100%);
-  transition: transform .4s;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  }
-  .imagen-disciplina:hover::before{
-    transform: translate(0) rotate(360deg);  
-  }
-
-
-
-  @media (max-width:768px) {
-    .container {  
-      display: grid;
-      grid-template-columns:  0.5fr 1fr;
-      grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
-      grid-template-areas:
-        "logo-ups header "
-        "logo-ups Control"
-        "logo-ups disciplina"
-        "footer footer";
-    }
-  
-    .container{
-      width: 100%;
-      height: 60vh;
-    }
-    
-    h2{
-      padding: 1.5px;
-      margin-top: 30px;
-      font-size: 1rem;
-
-    }
-
-    .logo-ups img{
-      width: 200px;
-   padding: 2.5px;
-   margin-top: 250px;
-margin-left: 25px;
-    }
-
-    .logo-ups h3{
-      font-size:  1.5rem;
-      margin-top: 25px;
-
-    }
-    video{
-      
-      height: 50vh;
-  margin-top: 30px;
-    }
-
-    .control{
-      width: 100%;
-    }
-   
-    .contenido-footer a{
-      font-size: 1rem;
-    }
-
-    }
-
-    @media (max-width:420px){
-
-      .container {  
-        display: grid;
-        grid-template-columns: 1.5fr;
-        grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
-        grid-template-areas:
-          "header"
-          "logo-ups"
-          "Control"
-          "disciplina"
-          "footer ";
-      }
-
-      .logo-ups img{
-        margin-left: 110px;
-        margin-top: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bolder; }
+  footer img {
+    width: 50px; }
+  footer a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: black; }
+    @media (max-width: 768px){
+      footer{
+        width:97.8vw ;
       }
     }
-
-
+  @media (max-width: 420px) {
+    footer {
+      font-size: .7rem; }
+      footer img {
+        width: 20px; } }

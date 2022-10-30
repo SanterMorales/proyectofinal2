@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1.4fr 1fr 1fr 1fr 1.4fr 0.6fr;
+    grid-auto-columns: 1fr;
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header header header header header"
+      "macros macros macros cafeina cafeina cafeina cafeina"
+      "macros macros macros cafeina cafeina cafeina cafeina"
+      "estres estres estres hidratacion hidratacion logbook logbook"
+      "estres estres estres hidratacion hidratacion logbook logbook"
+      "repeticiones repeticiones repeticiones carga-progresiva carga-progresiva carga-progresiva carga-progresiva"
+      "footer footer footer footer footer footer footer";
+  }
+  
+  .header { grid-area: header; 
+}
+  
+  .footer { grid-area: footer; 
+}
+  
+  .macros { grid-area: macros; 
+}
+  
+  .cafeina { grid-area: cafeina; 
+}
+  
+  .estres { grid-area: estres; 
+}
+  
+  .hidratacion { grid-area: hidratacion; 
+}
+  
+  .logbook { grid-area: logbook; 
+}
+  
+  .carga-progresiva { grid-area: carga-progresiva; 
+}
+  
+  .repeticiones { grid-area: repeticiones; 
+}
+body{
+  background-color: blue;
+}
+   /* MAIN  */
+  .contenedor{
+    width: 100%;
+    height: 100vh;
+  }
+
+
+  .cafeina{
+    width:100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: solid 2px white;
+
+  }
+
+  .cafeina img{
+    width: 25%;
+    transition: all 300ms;
+  }
+
+  .cafeina img:hover {
+   transform: scale(120%);
+  }
+
+  .macros{
+    width:100%;
+    height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   border: solid 2px white;
+  }
+
+  .macros img{
+  width: 33%;
+  margin-left: 1px;
+  height: auto;
+  transition: all 300ms;
+  
+  }
+  .macros img:hover {
+    transform: scale(130%);
+   }
+
+  .hidratacion{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    border: solid 2px white;
+  }
+  .hidratacion img{
+    width: 50%;
+    transition: all 300ms;
+  }
+  .hidratacion img:hover {
+    transform: scale(200%);
+   }
+  
+  .logbook{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    border: solid 2px white;
+  }
+
+  .logbook img{
+    width: 50%;
+    transition: all 300ms;
+  }
+  .logbook img:hover {
+    transform: scale(150%);
+   }
+
+  .estres{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    border: solid 2px white;
+
+  }
+
+  .estres img{
+    width: 25%;
+    transition: all 300ms;
+    
+  }
+
+  .estres img:hover {
+    transform: scale(150%);
+   }
+
+  .carga-progresiva{
+  width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: stretch;
+    border: solid 2px white;
+
+  }
+
+  .carga-progresiva iframe{
+    width: 100%;
+    height: 200px;
+  }
+
+  .repeticiones{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    border: solid 2px white;
+  }
+
+ .repeticiones img {
+   width: 33%;
+   transition: all 300ms;
+  }
+  .repeticiones img:hover {
+    transform: scale(130%);
+   }
+
+  .header{
+    width: 100%;
+  }
+
+  .header nav{
+    background-color: white;
+    border: solid black 2px;
+    font-family: 'Cinzel', serif;
+  }
+  /* FOOTER  */
+  footer {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    width: 100vw; }
+    footer img {
+      width: 50px; }
+    footer a {
+      font-family: 'Josefin Sans', sans-serif;
+      color: black }
+
+
+      @media (max-width: 420px) {
+        .contenedor {  display: grid;
+          grid-template-columns: 4fr;
+          grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.6fr;
+          grid-auto-columns: 1fr;
+          gap: 1px 1px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "header"
+            "macros"
+            "cafeina"
+            "estres "
+            "logbook"
+            "hidratacion"
+            "repeticiones"
+            "carga-progresiva"
+            "footer";
+        }
+        .cafeina img:hover {
+          transform: scale(1);
+         }
+         .macros img:hover {
+          transform: scale(1);
+         }
+         .hidratacion img:hover {
+          transform: scale(1);
+         }
+         .logbook img:hover {
+          transform: scale(1);
+         }
+         .estres img:hover {
+          transform: scale(1);
+         }
+         .repeticiones img:hover {
+          transform: scale(1);
+         }
+
+
+        footer {
+          font-size: .7rem; }
+          footer img {
+            width: 20px; } 
+          }
